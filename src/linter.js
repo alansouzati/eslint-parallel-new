@@ -15,7 +15,7 @@ import glob from 'glob';
 /**
 * Local dependencies
 **/
-import { formatResults } from './formatter'dd
+import { formatResults } from './formatter
 
 const cpuCount = os.cpus().length;
 
