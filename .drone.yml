@@ -7,4 +7,4 @@ pipeline:
 matrix:
   NODE_VERSION:
     - 6.9-slim
-    - 7.4-slim
+    - latest
