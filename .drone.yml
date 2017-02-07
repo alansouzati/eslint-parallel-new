@@ -1,11 +1,10 @@
 pipeline:
   build:
-    image: kkarczmarczyk/node-yarn:6.9-slim
+    image: kkarczmarczyk/node-yarn:${NODE_VERSION}
     commands:
       - yarn install
       - yarn run build
-  build2:
-    image: kkarczmarczyk/node-yarn:6.9-slim
-    commands:
-      - yarn install
-      - yarn run build
+matrix:
+  NODE_VERSION:
+    - 6.9-slim
+    - 7.4-slim
