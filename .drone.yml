@@ -4,3 +4,8 @@ pipeline:
     commands:
       - yarn install
       - yarn run build
+  build2:
+    image: kkarczmarczyk/node-yarn:6.9-slim
+    commands:
+      - yarn install
+      - yarn run build
